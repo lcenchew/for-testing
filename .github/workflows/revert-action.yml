@@ -1,0 +1,2 @@
+- name: Revert Push
+  uses: lcenchew/revert-push@v0.0.1
