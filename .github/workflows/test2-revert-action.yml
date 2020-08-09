@@ -1,6 +1,11 @@
 name: test2-revert-action
 on: 
   workflow_dispatch:
+    inputs:
+      branch:
+        description: 'Branch to revert latest commit'
+        required: true
+        default: 'master'
 
 jobs:
   test2-revert-action:
