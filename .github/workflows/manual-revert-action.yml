@@ -1,4 +1,4 @@
-name: test2-revert-action
+name: Manual Revert Push Action
 on: 
   workflow_dispatch:
     inputs:
@@ -8,8 +8,9 @@ on:
         default: 'master'
 
 jobs:
-  test2-revert-action:
+  revert:
     runs-on: ubuntu-latest
     steps: 
       - name: Revert Push
         uses: lcenchew/revert-push@v0.0.1
+        with: ${{ github.event.inputs.branch }}
