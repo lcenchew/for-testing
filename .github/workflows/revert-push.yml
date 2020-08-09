@@ -9,7 +9,7 @@ on:
         default: 'master'
 
 jobs:
-  update-version:
+  revert:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
