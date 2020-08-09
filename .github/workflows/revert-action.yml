@@ -1,2 +1,9 @@
-- name: Revert Push
-  uses: lcenchew/revert-push@v0.0.1
+name: revert-action
+on: [workflow_dispatch]
+
+jobs:
+  rever-action:
+    runs-on: ubuntu-latest
+    steps: 
+      - name: Revert Push
+        uses: lcenchew/revert-push@v0.0.1
