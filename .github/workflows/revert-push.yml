@@ -1,10 +1,4 @@
 name: revert-push
-
-description: Revert latest push to the one before it.
-author: lcenchew
-branding:
-  icon: git-commit
-  color: green
   
 on:
   workflow_dispatch:
