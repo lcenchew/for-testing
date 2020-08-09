@@ -1,8 +1,8 @@
-name: revert-action
+name: test-revert-action
 on: [workflow_dispatch]
 
 jobs:
-  rever-action:
+  test-revert-action:
     runs-on: ubuntu-latest
     steps: 
       - name: Revert Push
