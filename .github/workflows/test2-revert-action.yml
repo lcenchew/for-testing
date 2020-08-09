@@ -1,0 +1,9 @@
+name: test2-revert-action
+on: [workflow_dispatch]
+
+jobs:
+  test2-revert-action:
+    runs-on: ubuntu-latest
+    steps: 
+      - name: Revert Push
+        uses: lcenchew/revert-push@v0.0.1
